@@ -11,7 +11,7 @@ Read [README.md](README.md) first. This mod was split out of [madnesswright](htt
 - Keep the Workshop page in step: any change a player can see updates `workshop-description.txt` in the same pull request, and whenever what a player sees changes, retake the screenshots and rebuild the preview before or with the upload; afterwards check the live page.
 - Nothing goes to the Workshop before the owner has played the build and said so.
 - This is a public repository. Nothing in it names a person other than the author credit, a machine, an absolute path on someone's machine, a private project or a credential. Whoever asked for a change is "the requester" or "the player", never a family word.
-- Before committing, run `dotnet run --project tests/DirectorFreezeChecks/DirectorFreezeChecks.csproj` (CI runs it). Versions: bump `-Version` in `pack.ps1` and `mod/info.txt`, add a `change-notes-<version>.txt`, tag `vX.Y.Z`.
+- Before committing, run `dotnet run --project tests/DirectorFreezeChecks/DirectorFreezeChecks.csproj` (CI runs it). Versions: bump the default `-Version` in `pack.ps1` (`mod/info.txt` holds no version), add a `change-notes-<version>.txt`, tag `vX.Y.Z`.
 - No AI attribution anywhere: no Co-Authored-By trailers and no "generated with" lines in commits, pull requests or files.
 
 ## Handoff

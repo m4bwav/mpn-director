@@ -16,5 +16,5 @@ echo Installed to "%DEST%"
 echo.
 echo Next: Steam, right-click MADNESS: Project Nexus, Properties, Betas, pick releasebeta.
 echo Then launch, click the gear icon at the bottom left of the main menu,
-echo select "Swap And Unaware", tick ENABLED, Apply, and restart the game.
+echo select "Director", tick ENABLED, Apply, and restart the game.
 pause
