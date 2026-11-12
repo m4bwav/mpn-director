@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\CrowdFeatures.cs" Link="CrowdFeatures.cs" />
+    <Compile Include="..\..\src\SwapUnawareBehaviour.cs" Link="SwapUnawareBehaviour.cs" />
+    <Compile Include="..\..\src\AmmoFeature.cs" Link="AmmoFeature.cs" />
+    <Compile Include="..\..\src\WeaponCatalog.cs" Link="WeaponCatalog.cs" />
+    <Compile Include="..\..\src\BossBarFeature.cs" Link="BossBarFeature.cs" />
+    <Compile Include="..\..\src\WaveRoster.cs" Link="WaveRoster.cs" />
+    <Compile Include="..\..\src\TeamFeature.cs" Link="TeamFeature.cs" />
+    <Compile Include="..\..\src\ListFilter.cs" Link="ListFilter.cs" />
+    <Compile Include="..\..\src\SceneMemory.cs" Link="SceneMemory.cs" />
+  </ItemGroup>
+</Project>

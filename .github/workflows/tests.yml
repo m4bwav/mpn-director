@@ -1,0 +1,18 @@
+# Runs the Director regression checks (game stubs, no game needed).
+name: tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  director-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: "10.0.x"
+      - name: freeze, ammo, boss bar, waves, team, list and scene checks
+        run: dotnet run --project tests/DirectorFreezeChecks/DirectorFreezeChecks.csproj

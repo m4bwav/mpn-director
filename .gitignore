@@ -1,4 +1,5 @@
-bin/
-obj/
 build/
 dist/
+bin/
+obj/
+*.dll

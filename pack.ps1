@@ -5,7 +5,9 @@ param([string]$Version = "0.17.1", [string]$GameManaged = $env:MPN_MANAGED)
 $ErrorActionPreference = "Stop"
 $root = $PSScriptRoot
 if (-not $GameManaged) {
-    $mpn = Join-Path $root "../../skills/madnesswright/scripts/mpn.py"
+    # mpn.py ships with the madnesswright toolkit (github.com/m4bwav/madnesswright): MPN_PY, or a sibling clone.
+    $mpn = if ($env:MPN_PY) { $env:MPN_PY } else { Join-Path $root "../madnesswright/skills/madnesswright/scripts/mpn.py" }
+    if (-not (Test-Path $mpn)) { throw "mpn.py not found: pass -GameManaged, set MPN_PY, or clone madnesswright next to this repo" }
     $where = python -I $mpn where | ConvertFrom-Json
     if (-not $where.install.install_dir) { throw "game not found: pass -GameManaged <...\Madness Project Nexus_Data\Managed>" }
     $GameManaged = Join-Path $where.install.install_dir "Madness Project Nexus_Data/Managed"
