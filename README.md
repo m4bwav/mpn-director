@@ -1,5 +1,9 @@
 # Director
 
+![A faceless grey stick-figure director in a black suit raises a megaphone beside a director's chair and clapperboard while three suited stick-figure grunts stand frozen mid-fight in a spotlit grey concrete room marked with red and black patrol squares](https://raw.githubusercontent.com/m4bwav/mpn-director/main/.github/images/banner.jpg)
+
+A mod for MADNESS: Project Nexus, built with [madnesswright](https://github.com/m4bwav/madnesswright), the open-source toolkit for modding the game; this repository was split out of it on 2026-11-11 with its full history. Wiki: https://github.com/m4bwav/mpn-director/wiki
+
 Direct any fight, in any mode: the story campaign, the arenas, custom stages and the Playground. Take control of any character, freeze the room, set patrols and guards, pose enemies, clear the bodies and save scenes to replay. Formerly Playground Director (renamed in 0.6.1 because it was never Playground-only; the Workshop title became plain "Director" with 0.12.0) and before that Swap And Unaware. A requested mod, kept here as the worked example for the [madnesswright-modtools](https://github.com/m4bwav/madnesswright/blob/main/skills/madnesswright-modtools/SKILL.md) skill's Harmony route: an `IModEntrypoint`, two Harmony prefixes, one component per feature, a net48 build against the player's own game files, and the bugs live playtests found.
 
 | Key | What it does |
