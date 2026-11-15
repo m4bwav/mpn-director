@@ -1,0 +1,1 @@
+Page text only, no change to the mod (still 0.17.1): the source link now points to the mod's own repository, https://github.com/m4bwav/mpn-director.
